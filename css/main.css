@@ -36,6 +36,9 @@ nav .nav-right-section a{
     color: black;
     
 }
+nav .nav-right-section .nav-line--hover a:hover{
+    text-decoration: underline;
+}
 nav .nav-right-section .menu-icon{
     background-image: url('https://static.thenounproject.com/png/756729-200.png');
     background-repeat: no-repeat;
@@ -74,9 +77,89 @@ main .main-input--container{
     justify-content: center;
     align-items: center;
 }
+main .main-input--container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
 main .main-input--container input{
     width: 450px;
     height: 40px;
     border: none;
     outline: none;
+}
+main .main-input .span--search-item{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+main .main-input .div--micro-icon{
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+    
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    color: #202124;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+footer section:nth-child(2){
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+footer section ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer section .footer-left{
+    justify-content: start;
+}
+footer section .footer-right{
+    justify-content: end;
+}
+footer section ul li a{
+    margin: 10px;
+    color: #5f6368;
 }
